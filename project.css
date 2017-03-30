@@ -35,12 +35,12 @@ html {
   left: 15px;
 }
 
-span.hidden-message{
+.hidden-message{
   opacity: 0.0;
   position: relative;
   left: 15px;
 }
-span.shown-message{
+.shown-message{
   opacity: 1.0;
   position: relative;
   left: 15px;
