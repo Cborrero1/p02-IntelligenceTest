@@ -90,6 +90,7 @@ function nixon()
   var ans1 = document.getElementById("ans1").value;
    if(ans1 == "917") {
   score++; }
+  setCookie("scores",score,30);
   window.location.href = "question2.html";
   
 }
@@ -99,6 +100,7 @@ function lincoln()
   var ans2 = document.getElementById("ans2").value;
    if(ans2 == "DOWN") {
   score++; }
+  setCookie("scores",score,30);
   window.location.href = "question3.html";
   
 }
@@ -108,6 +110,7 @@ function obama()
   var ans3 = document.getElementById("ans3").value;
    if(ans3 == "265") {
   score++; }
+  setCookie("scores",score,30);
   window.location.href = "results.html";
   
 }
