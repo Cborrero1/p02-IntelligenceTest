@@ -1,11 +1,5 @@
 var score = 0;
 
-function run(){
-document.getElementById("result").classList.remove("hidden-message");
-document.getElementById("result").classList.add("shown-message");
-document.getElementById("result").innerHTML = getCookie("scores");
-}
-
 function setCookie(cname,cvalue,exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
