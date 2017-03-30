@@ -1,0 +1,47 @@
+html {
+  background-color: lightgreen;
+  color: darkblue;
+ font-family: "Times New Roman", Times, serif;
+}
+
+.InsPar {
+  max-width: 550px;
+  font-size: 120%;
+  clear: both;
+}
+
+.Push {
+  position: relative;
+  left: 100px;
+}
+
+.Link {
+  font-size: 140%;
+  color: darkred;
+}
+
+.LisExa {
+  font-size: 140%;
+}
+
+.Hint {
+  position: relative;
+  left: 150px;
+  font-size: 75%;
+}
+
+.AnsBox {
+  position: relative;
+  left: 15px;
+}
+
+span.hidden-message{
+  opacity: 0.0;
+  position: relative;
+  left: 15px;
+}
+span.shown-message{
+  opacity: 1.0;
+  position: relative;
+  left: 15px;
+}
