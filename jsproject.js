@@ -1,9 +1,9 @@
 //Cody Borrero
 //setCookie and getCookie code is courtesy of W3Schools
-function setCookie(cname,cvalue,exdays) {
+function setCookie(cname, cvalue, exdays) {
     var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires=" + d.toGMTString();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
@@ -102,9 +102,9 @@ function nixon()
   var R = 1;
   var F = 0;
    if(ans1 == "917") {
-  setCookie("ans1",R,0); }
+  setCookie("ans1",R,30); }
   else {
-    setCookie("ans1",F,0);
+    setCookie("ans1",F,30);
   }
   window.location.href = "question2.html";
   
@@ -116,9 +116,9 @@ function lincoln()
   var R = 1;
   var F = 0;
    if(ans2 == "DOWN") {
-  setCookie("ans2",R,0); }
+  setCookie("ans2",R,30); }
   else {
-    setCookie("ans2",F,0);
+    setCookie("ans2",F,30);
   }
   window.location.href = "question3.html";
   
@@ -130,9 +130,9 @@ function obama()
   var R = 1;
   var F = 0;
    if(ans3 == "265") {
-       setCookie("ans3",R,0); }
+       setCookie("ans3",R,30); }
   else {
-    setCookie("ans3",F,0);
+    setCookie("ans3",F,30);
   }
   window.location.href = "results.html";
   
