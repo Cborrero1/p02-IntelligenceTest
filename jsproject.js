@@ -143,10 +143,7 @@ function displayResults(){
   var res1 = getCookie("ans1");
   var res2 = getCookie("ans2");
   var res3 = getCookie("ans3");
-  var resF = res1 + res2 + res3;
-  var resFF = Number(resF);
-  var resFFF = resFF / 3;
-  var resF4 = resFFF * 100 + "%";
+  
   if(res1 == 1){
     document.getElementById("spAns1").innerHTML="Correct!";
     document.getElementById("spAns1").classList.remove("sp");
@@ -177,8 +174,56 @@ function displayResults(){
     document.getElementById("spAns3").classList.remove("sp");
     document.getElementById("spAns3").classList.add("spI");
   }
-  document.getElementById("spR").innerHTML = resF4;
+  if(res1 == 1){
+    if(res2 == 1){
+      if(res3 == 1){
+  document.getElementById("spR").innerHTML="100%";
   document.getElementById("spR").classList.remove("sp");
   document.getElementById("spR").classList.add("spCC");
-  
-}
+      }
+      else{
+  document.getElementById("spR").innerHTML="66.67%";
+  document.getElementById("spR").classList.remove("sp");
+  document.getElementById("spR").classList.add("spCC");
+      }
+    }
+    else{
+      if(res3 == 1){
+  document.getElementById("spR").innerHTML="66.67%";
+  document.getElementById("spR").classList.remove("sp");
+  document.getElementById("spR").classList.add("spCC");
+      }
+      else{
+  document.getElementById("spR").innerHTML="33.33%";
+  document.getElementById("spR").classList.remove("sp");
+  document.getElementById("spR").classList.add("spCC");
+      }
+    }
+  }
+  else{
+    if(res2 == 1){
+      if(res3 == 1){
+  document.getElementById("spR").innerHTML="66.67%";
+  document.getElementById("spR").classList.remove("sp");
+  document.getElementById("spR").classList.add("spCC");
+      }
+      else{
+  document.getElementById("spR").innerHTML="33.33%";
+  document.getElementById("spR").classList.remove("sp");
+  document.getElementById("spR").classList.add("spCC");
+      }
+      }
+      else{
+        if(res3 == 1){
+  document.getElementById("spR").innerHTML="33.33%";
+  document.getElementById("spR").classList.remove("sp");
+  document.getElementById("spR").classList.add("spCC");
+        }
+        else{
+  document.getElementById("spR").innerHTML="0%";
+  document.getElementById("spR").classList.remove("sp");
+  document.getElementById("spR").classList.add("spCC");
+        }
+      }
+    }
+  }
