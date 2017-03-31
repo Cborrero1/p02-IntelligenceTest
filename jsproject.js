@@ -42,7 +42,7 @@ function showHint()
 function validateAns1()
 {
   var ans1 = document.getElementById("ans1").value;
-  if(isNaN(ans1) === 1) {
+  if(isNaN(ans1) === true) {
   document.getElementById("ans1-check").innerHTML="Only numbers are allowed";
   document.getElementById("ans1-check").classList.remove("hidden-message");
   document.getElementById("ans1-check").classList.add("shown-message");
@@ -62,8 +62,10 @@ function validateAns1()
 function validateAns2()
 {
   var ans2 = document.getElementById("ans2").value;
-  if(isNaN(ans2) === 0) {
-  document.getElementById("ans1-check").innerHTML="Only letters are allowed"; }
+  if(isNaN(ans2) === false) {
+  document.getElementById("ans2-check").innerHTML="Only letters are allowed";
+    document.getElementById("ans2-check").classList.remove("hidden-message");
+  document.getElementById("ans2-check").classList.add("shown-message");}
   else{
   if(ans2 != "DOWN") {
   document.getElementById("ans2-check").innerHTML="Wrong Answer";
@@ -79,8 +81,10 @@ function validateAns2()
 function validateAns3()
 {
   var ans3 = document.getElementById("ans3").value;
-  if(isNaN(ans3) === 1) {
-  document.getElementById("ans1-check").innerHTML="Only numbers are allowed"; }
+  if(isNaN(ans3) === true) {
+  document.getElementById("ans1-check").innerHTML="Only numbers are allowed";
+    document.getElementById("ans3-check").classList.remove("hidden-message");
+  document.getElementById("ans3-check").classList.add("shown-message");}
   else {
   if(ans3 != "265") {
    document.getElementById("ans3-check").innerHTML="Wrong Answer";
