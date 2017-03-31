@@ -1,5 +1,5 @@
 var score = 0;
-
+//setCookie and getCookie code is courtesy of W3Schools
 function setCookie(cname,cvalue,exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -85,8 +85,8 @@ function nixon()
 {
   var ans1 = document.getElementById("ans1").value;
    if(ans1 == "917") {
-  score = score + 1;
-  setCookie("scores",score,0);}
+  score = score + 1;}
+  setCookie("scores",score,0);
   window.location.href = "question2.html";
   
 }
@@ -95,8 +95,8 @@ function lincoln()
 {
   var ans2 = document.getElementById("ans2").value;
    if(ans2 == "DOWN") {
-  score = score + 1;
-  setCookie("scores",score,0); }
+  score = score + 1;}
+  setCookie("scores",score,0);
   window.location.href = "question3.html";
   
 }
@@ -105,8 +105,8 @@ function obama()
 {
   var ans3 = document.getElementById("ans3").value;
    if(ans3 == "265") {
-  score = score + 1;
-  setCookie("scores",score,0);}
+  score = score + 1;}
+  setCookie("scores",score,0);
   window.location.href = "results.html";
   
 }
