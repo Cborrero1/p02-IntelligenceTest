@@ -42,6 +42,12 @@ function showHint()
 function validateAns1()
 {
   var ans1 = document.getElementById("ans1").value;
+  if(isNaN(ans1) === 1) {
+  document.getElementById("ans1-check").innerHTML="Only numbers are allowed";
+  document.getElementById("ans1-check").classList.remove("hidden-message");
+  document.getElementById("ans1-check").classList.add("shown-message");
+  }
+  else {
   if(ans1 != "917") {
    document.getElementById("ans1-check").innerHTML="Wrong Answer";
   document.getElementById("ans1-check").classList.remove("hidden-message");
@@ -51,13 +57,16 @@ function validateAns1()
       document.getElementById("ans1-check").innerHTML="Correct!";
       
   }
-}
+}}
 
 function validateAns2()
 {
   var ans2 = document.getElementById("ans2").value;
+  if(isNaN(ans2) === 0) {
+  document.getElementById("ans1-check").innerHTML="Only letters are allowed"; }
+  else{
   if(ans2 != "DOWN") {
-   document.getElementById("ans2-check").innerHTML="Wrong Answer";
+  document.getElementById("ans2-check").innerHTML="Wrong Answer";
   document.getElementById("ans2-check").classList.remove("hidden-message");
   document.getElementById("ans2-check").classList.add("shown-message");
     }
@@ -65,11 +74,14 @@ function validateAns2()
       document.getElementById("ans2-check").innerHTML="Correct!";
       
   }
-}
+}}
 
 function validateAns3()
 {
   var ans3 = document.getElementById("ans3").value;
+  if(isNaN(ans3) === 1) {
+  document.getElementById("ans1-check").innerHTML="Only numbers are allowed"; }
+  else {
   if(ans3 != "265") {
    document.getElementById("ans3-check").innerHTML="Wrong Answer";
   document.getElementById("ans3-check").classList.remove("hidden-message");
@@ -79,13 +91,13 @@ function validateAns3()
       document.getElementById("ans3-check").innerHTML="Correct!";
       
   }
-}
+}}
 
 function nixon()
 {
   var ans1 = document.getElementById("ans1").value;
    if(ans1 == "917") {
-  score = score + 1;}
+  score++;}
   setCookie("scores",score,1);
   window.location.href = "question2.html";
   
@@ -95,7 +107,7 @@ function lincoln()
 {
   var ans2 = document.getElementById("ans2").value;
    if(ans2 == "DOWN") {
-  score = score + 1;}
+  score++;}
   setCookie("scores",score,1);
   window.location.href = "question3.html";
   
@@ -105,7 +117,7 @@ function obama()
 {
   var ans3 = document.getElementById("ans3").value;
    if(ans3 == "265") {
-  score = score + 1;}
+  score++;}
   setCookie("scores",score,1);
   window.location.href = "results.html";
   
