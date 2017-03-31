@@ -99,10 +99,12 @@ function validateAns3()
 function nixon()
 {
   var ans1 = document.getElementById("ans1").value;
+  var R = 1;
+  var F = 0;
    if(ans1 == "917") {
-  setCookie("ans1",1,0); }
+  setCookie("ans1",R,0); }
   else {
-    setCookie("ans1",0,0);
+    setCookie("ans1",F,0);
   }
   window.location.href = "question2.html";
   
@@ -111,10 +113,12 @@ function nixon()
 function lincoln()
 {
   var ans2 = document.getElementById("ans2").value;
+  var R = 1;
+  var F = 0;
    if(ans2 == "DOWN") {
-  setCookie("ans2",1,0); }
+  setCookie("ans2",R,0); }
   else {
-    setCookie("ans2",0,0);
+    setCookie("ans2",F,0);
   }
   window.location.href = "question3.html";
   
@@ -123,10 +127,12 @@ function lincoln()
 function obama()
 {
   var ans3 = document.getElementById("ans3").value;
+  var R = 1;
+  var F = 0;
    if(ans3 == "265") {
-       setCookie("ans3",1,0); }
+       setCookie("ans3",R,0); }
   else {
-    setCookie("ans3",0,0);
+    setCookie("ans3",F,0);
   }
   window.location.href = "results.html";
   
