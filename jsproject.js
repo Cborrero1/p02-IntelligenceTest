@@ -1,4 +1,4 @@
-var score = 0;
+var score = 2;
 //setCookie and getCookie code is courtesy of W3Schools
 function setCookie(cname,cvalue,exdays) {
     var d = new Date();
