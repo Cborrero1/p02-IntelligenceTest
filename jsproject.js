@@ -1,4 +1,4 @@
-var score = 2;
+//Cody Borrero
 //setCookie and getCookie code is courtesy of W3Schools
 function setCookie(cname,cvalue,exdays) {
     var d = new Date();
@@ -101,8 +101,10 @@ function nixon()
 {
   var ans1 = document.getElementById("ans1").value;
    if(ans1 == "917") {
-  score++;}
-  setCookie("scores",score,1);
+  setCookie("ans1",1,0); }
+  else {
+    setCookie("ans1",0,0);
+  }
   window.location.href = "question2.html";
   
 }
@@ -111,8 +113,10 @@ function lincoln()
 {
   var ans2 = document.getElementById("ans2").value;
    if(ans2 == "DOWN") {
-  score++;}
-  setCookie("scores",score,1);
+  setCookie("ans2",1,0); }
+  else {
+    setCookie("ans2",0,0);
+  }
   window.location.href = "question3.html";
   
 }
@@ -121,8 +125,54 @@ function obama()
 {
   var ans3 = document.getElementById("ans3").value;
    if(ans3 == "265") {
-  score++;}
-  setCookie("scores",score,1);
+       setCookie("ans3",1,0); }
+  else {
+    setCookie("ans3",0,0);
+  }
   window.location.href = "results.html";
+  
+}
+
+function displayResults(){
+  var res1 = getCookie("ans1");
+  var res2 = getCookie("ans2");
+  var res3 = getCookie("ans3");
+  var resF = res1 + res2 + res3;
+  var resFF = Number(resF);
+  var resFFF = resFF / 3;
+  var resF4 = resFFF * 100 + "%";
+  if(res1 == 1){
+    document.getElementById("spAns1").innerHTML="Correct!";
+    document.getElementById("spAns1").classList.remove("sp");
+    document.getElementById("spAns1").classList.add("spC");
+  }
+  else{
+    document.getElementById("spAns1").innerHTML="Wrong!";
+    document.getElementById("spAns1").classList.remove("sp");
+    document.getElementById("spAns1").classList.add("spI");
+  }
+  if(res2 == 1){
+    document.getElementById("spAns2").innerHTML="Correct!";
+    document.getElementById("spAns2").classList.remove("sp");
+    document.getElementById("spAns2").classList.add("spC");
+  }
+  else{
+    document.getElementById("spAns2").innerHTML="Wrong!";
+    document.getElementById("spAns2").classList.remove("sp");
+    document.getElementById("spAns2").classList.add("spI");
+  }
+  if(res3 == 1){
+    document.getElementById("spAns3").innerHTML="Correct!";
+    document.getElementById("spAns3").classList.remove("sp");
+    document.getElementById("spAns3").classList.add("spC");
+  }
+  else{
+    document.getElementById("spAns3").innerHTML="Wrong!";
+    document.getElementById("spAns3").classList.remove("sp");
+    document.getElementById("spAns3").classList.add("spI");
+  }
+  document.getElementById("spR").innerHTML = resF4;
+  document.getElementById("spR").classList.remove("sp");
+  document.getElementById("spR").classList.add("spCC");
   
 }

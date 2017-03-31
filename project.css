@@ -1,3 +1,4 @@
+/* Cody Borrero */
 html {
   background-color: lightgreen;
   color: darkblue;
@@ -44,4 +45,36 @@ html {
   opacity: 1.0;
   position: relative;
   left: 15px;
+}
+
+.enhance{
+  font-size: 140%;
+}
+
+.sp{
+  opacity: 0.0;
+  position: relative;
+  left: 15px;
+}
+
+.spC{
+  opacity: 1.0;
+  position: relative;
+  left: 15px;
+  color: black;
+}
+
+.spI{
+  opacity: 1.0;
+  position: relative;
+  left: 15px;
+  color: red;
+}
+
+.spCC{
+  opacity: 1.0;
+  position: relative;
+  left: 15px;
+  font-size: 140%;
+  color: purple;
 }
